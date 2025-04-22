@@ -1,0 +1,70 @@
+/* 关于页布局 */
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #34495e;
+  }
+  
+  .about-skills {
+    margin-top: 40px;
+  }
+  
+  .skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    
+    .about-image {
+      order: -1;
+      margin-bottom: 30px;
+    }
+  }

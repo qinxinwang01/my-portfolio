@@ -1,0 +1,57 @@
+.project-section {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  padding: 15px 20px 5px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 20px 20px;
+  line-height: 1.5;
+}
+
+/* 响应式支持 */
+@media (max-width: 900px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
